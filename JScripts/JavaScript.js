@@ -47,6 +47,15 @@ function vividView() {
 	}
 }
 
+const DButton = document.getElementById("default");
+const HButton = document.getElementById("highcontrast");
+const IButton = document.getElementById("invert");
+
+DButton.addEventListener("click", defaultView);
+HButton.addEventListener("click", contrastView);
+IButton.addEventListener("click", vividView);
+
+
 
 function submitFunc() {
 	let firstName = document.getElementById("firstname").value.trim();
@@ -63,12 +72,3 @@ function submitFunc() {
 		document.getElementById("message").value = "";
 	}
 }
-
-const DButton = document.getElementById("default");
-const HButton = document.getElementById("highcontrast");
-const IButton = document.getElementById("invert");
-
-DButton.addEventListener("click", defaultView);
-HButton.addEventListener("click", contrastView);
-IButton.addEventListener("click", vividView);
-

@@ -1,0 +1,413 @@
+/* General */
+body, html { /* Multiple selector */
+  height: 100%;
+  background-color: #000658;
+}
+
+* { /* Universal Selector */
+	color: #c6ebff;
+	margin: 0;
+}
+
+p, li{
+	font-size: 16px;
+}
+
+h1 ~ p { /* Sibling Selector */
+	color: #fc5ca4;
+	margin: 20px;
+}
+
+h1 {
+	padding: 10px 20px;
+}
+
+h2 + p { /* Adjacent Sibling Selector */
+	color: #c6ebff;
+	padding: 10px 20px;
+}
+
+h2 {
+	color: #fc5ca4;
+	padding: 10px 20px;
+
+}
+
+.imgstyle {
+	border:3px solid #E2E297;
+	padding:5px;
+	margin:1px;
+}
+
+.imgstyleplc {
+	width: 250px;
+	height: auto;
+}
+
+.indexvid {
+	height: 240px; 
+	float: left;
+	padding: 20px;
+	padding-right:30px;
+}
+
+a:link {
+  color: #ffffc0;
+}
+
+a:visited {
+  color: #ffe587;
+}
+
+a:hover:not(.navcur) {
+  color: #000334;
+}
+
+.extlinks{
+	/*just to select in color change*/
+}
+
+ul:not(.nav) {
+  list-style-type: square;
+}
+
+.bottom100 {
+	margin-bottom:100px;
+}
+
+ol:not(.nav) {
+	list-style-type: upper-roman;
+}
+
+table,th,tr {
+	width:100%;
+	border-collapse: collapse;
+}
+
+td {
+	padding:20px;
+}
+
+.firstTD {
+	padding-left: 10vw;
+	padding-right:0px;
+}
+
+
+.bottombar {
+	border: 2px solid #E2E297;
+}
+
+
+/* Parallax */
+.parallax1 {
+  background-image: url('../Images/LandingImg.jpg');
+  height: 60vw;
+  max-width: 100vw; 
+  background-attachment: fixed;
+  background-position: 0px 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.parallax2 {
+  background-image: url('../Images/Tree.jpg');
+  height: 30%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  background-image: url('../Images/Hey!.jpg');
+  height: 30%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  background-image: url('../Images/Reflection.jpg');
+  height: 30%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*non parallax*/
+.general{
+	background-color:#000658;
+}
+
+ /* navbar */
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000334;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index:100;
+  
+}
+
+.navitem {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+}
+
+.navlink {
+  display: block;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 26px;
+  color: #E2E297;
+}
+
+.navright {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 0px 0px;
+  text-decoration: none;
+}
+
+.navitem a:hover:not(.navcur){ /* Change the link color on hover */
+  background-color: #fc5ca4;
+}
+
+.navcur { /* current page */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
+  background-color: #000658;
+  color: #E2E297;
+}
+
+
+ /* flexbox */
+.flex-box{
+	display: flex;
+	flex-flow:row wrap;
+	position: relative;
+	max-width: 98vw;
+}
+
+.flex-box > div { /* Child Selector */
+	margin: 10px;
+}
+
+
+/* image hover overlay */
+.imgcont {
+  position: relative;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000658;
+}
+
+.imgcont:hover .overlay {
+  opacity: 0.6;
+}
+
+.imgtext {
+  color: #E2E297;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ /* Slide image captions */
+.caption {
+	 position: relative;
+	 text-align: center;
+	 top: 60%
+}
+ 
+.caption div.captext{
+	 background-color:#000658;
+	 color:#E2E297;
+	 padding: 18px;
+	 font-size: 25px;
+	 letter-spacing: 5px;
+}
+ 
+input[type=text], input[type=button], textarea { /* Attribute selector */
+  width: 97vw;
+  color: #E2E297;
+  padding: 5px 5px;
+  border: none;
+  background-color: #000334;
+  margin:5px;
+}
+
+input[type=button] {
+	width: 98.5%
+}
+
+form {
+	display: grid;
+	row-gap: 2px;
+}
+
+ /* {
+   background: #000 !important;
+   color: #0f0 !important;
+   outline: solid #f00 1px !important;
+} */
+
+@media only screen and (max-width: 500px){
+body {
+	padding-top:0px;
+}
+.parallax1 {
+  padding-top: 136px;
+  height: 28vw;
+  max-width: 100vw; 
+  background-attachment: fixed;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.parallax2 {
+  height: 30vw; 
+  max-width: 100vw; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  height: 30vw; 
+  max-width: 100vw; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  height: 30vw; 
+  max-width: 100vw; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input[type=text],textarea{ /* Attribute selector */
+  width: 95vw;
+}
+
+input[type=submit] {
+  width: 98vw;
+}
+
+.caption {
+	 position: relative;
+	 text-align: center;
+	 top: 40%
+}
+
+.imgstyle, .imgstyleplc {
+	width: 90vw;
+	height: auto;
+}
+
+.imgtext {
+  font-size: 40px;
+}
+
+.indexvid {
+	width: 100vw;
+    height: auto;	
+	padding: 0px;
+	padding-bottom:30px;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000334;
+  position: fixed;
+  width: 100%;
+  top: auto;
+  bottom: 0px;
+  z-index:100;
+  
+}
+
+td {
+	padding-bottom:160px;
+}
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1000px){
+.parallax1 {
+  height: 60vw;
+  max-width: 100vw; 
+  background-attachment: fixed;
+  background-position: 0px 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+input[type=text], textarea{ /* Attribute selector */
+  width: 97vw;
+}
+
+input[type=submit] {
+  width: 96vw;
+}
+
+.imgstyle, .imgstyleplc {
+	width: 40vw;
+	height: auto;
+}
+
+.caption {
+	 position: relative;
+	 text-align: center;
+	 top: 55%;
+}
+
+.indexvid {
+	height: 250px; 
+	float: left;
+	padding:30px
+}
+}

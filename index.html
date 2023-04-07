@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>HomePage</title>
+		<link rel="icon" href="../Images/Logo.png">
+        <link rel="stylesheet" href="../Styles/Styles.css">
+	</head>
+	<body>
+		
+		 <!-- Title Slide -->
+		<div class="parallax1"></div>
+
+		<div class="general">
+		<ul class="nav">
+				<li class="navitem"><a class="navcur" href="Index.html"><img width="25" height="25" src="../Images/Logo.png" alt="logo"></a></li>
+				<li class="navitem"><a class="navlink" href="Art.html">Art</a></li>
+				<li class="navitem"><a class="navlink" href="GameDesign.html">Game Design</a></li>
+				<li class="navitem"><a class="navlink" href="Photography.html">Photography</a></li>
+				<li class="navright"><span class="navlink"><input type="button" id="default" value="Default"></span></li>
+				<li class="navright"><span class="navlink"><input type="button" id="highcontrast" value="Contrast"></span></li>
+				<li class="navright"><span class="navlink"><input type="button" id="invert" value="Choco"></span></li>
+		</ul>
+		<video class="indexvid" controls autoplay muted>
+			<source src="../Videos/Placeholder.mp4">
+			Video format is not supported
+		</video>
+		<h1>Hey there!</h1>
+		<p>
+			I am Satwik Gorla, a student at Dalhousie University
+			currently studying BCS first semester. On this website
+			You will find out more about:
+			<ul class="bottom100">
+				<li>my artistic skills</li>
+				<li>my game design skills</li>
+				<li>my photography skills</li>
+			</ul>
+		</p>
+		</div>
+		
+		<!-- Art Section -->
+		<div class="parallax2">
+			<div class="caption">
+				<div class="captext">Art</div>
+			</div>
+		</div>
+		<div class="general">
+			<h2>How It Started</h2>
+			<p>
+				I started off drawing when i was inspired by a friend, text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+			</p>
+			<h2>Where It Has Led Me</h2>
+			<p>
+				I can now make concept art and character/element designe, text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+			</p>
+		</div>
+		
+		<!-- GameDesign Section -->
+		<div class="parallax3">
+			<div class="caption">
+				<div class="captext">Game Design</div>
+			</div>
+		</div>
+		<div class="general">
+			<h2>How It Started</h2>
+			<p>
+				I loved watching game design videos on youtube when i was young, text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+			</p>
+			<h2>Where It Has Led Me</h2>
+			<p>
+				I now have a lot of game design knowledge from studying games myself and looking through large numbers of case studies from experts, text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+			</p>
+		</div>
+		
+		<!-- Photography Section -->
+		<div class="parallax4">
+			<div class="caption">
+				<div class="captext">Photography</div>
+			</div>
+		</div>
+		<div class="general">
+			<h2>How It Started</h2>
+			<p>
+				My family wanted me to take pictures during vacations, text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+			</p>
+			<h2>Where It Has Led Me</h2>
+			<p>
+				Photography calms me down as well as gives me inspiration for game design, text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+				text text text text text text text text text text text text text text text 
+			</p>
+		</div>
+		
+		<!-- feedback Section -->
+		<div style="background-image: url('../Images/Splash.png');" class="parallax2">
+			<div class="caption">
+				<div class="captext">Contact Me</div>
+			</div>
+		</div>
+		<div class="general">
+			<h2>Business Inquiries</h2>
+			<p>
+				For business inquiries only:<br>
+				please contact me at <a style="text-decoration: none;" href="mailto:satwik.gorla@gmail.com" target="_blank">satwik.gorla@gmail.com</a>
+			</p>
+			<br>
+			<br>
+			<br>
+			<h2>General Feedback Form:</h2>
+			<p>
+				<form>
+					<input type="text" name="firstname" id="firstname" placeholder="Firstname...">
+					<input type="text" name="lastname" id="lastname" placeholder="Lastname...">
+					<textarea name="message" id="message" rows="4" placeholder="Your Message..."></textarea>
+					<input type="button" id="submit-button" value="submit" onclick="submitFunc()">
+				</form>
+			</p>
+		</div>
+	<br>
+	<br>
+	<table>
+		<tr>
+			<td class="firstTD"><a class="extlinks" href="#">Go to top</a></td>
+			<td><a class="extlinks" href="https://www.instagram.com/noobkingubot/" target="_blank">Instagram</a></td>
+			<td><a class="extlinks" href="mailto:satwik.gorla@gmail.com" target="_blank">Contact me</a></td>
+			<td><a class="extlinks" href="https://www.youtube.com/channel/UC2QvGqp-51_WdjPxOYYZmqg" target="_blank">Youtube</a></td>
+			<td><a class="extlinks" href="https://www.instagram.com" >Hosted Website</a></td>
+		</tr>
+	</table>
+	<script src="../JScripts/JavaScript.js"></script>
+	</body>
+</html>
